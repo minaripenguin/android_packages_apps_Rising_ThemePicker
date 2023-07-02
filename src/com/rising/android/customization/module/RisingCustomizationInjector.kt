@@ -1,4 +1,4 @@
-package com.statix.android.customization.module
+package com.rising.android.customization.module
 
 import android.app.Activity
 import android.content.Context
@@ -13,7 +13,7 @@ import com.android.wallpaper.picker.MonetPreviewFragment
 import com.android.customization.module.ThemePickerInjector
 import com.android.customization.picker.notifications.ui.viewmodel.NotificationSectionViewModel
 
-public class StatixCustomizationInjector : ThemePickerInjector() {
+public class RisingCustomizationInjector : ThemePickerInjector() {
 
     private var customizationSections: CustomizationSections? = null
 
@@ -29,7 +29,7 @@ public class StatixCustomizationInjector : ThemePickerInjector() {
 
     override fun getCustomizationSections(activity: ComponentActivity): CustomizationSections {
         return customizationSections
-            ?: StatixCustomizationSections(
+            ?: RisingCustomizationSections(
                     getColorPickerViewModelFactory(
                         context = activity,
                         wallpaperColorsViewModel = getWallpaperColorsViewModel(),

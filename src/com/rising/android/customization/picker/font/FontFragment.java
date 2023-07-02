@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.android.customization.picker.font;
+package com.rising.android.customization.picker.font;
 
 import static com.android.wallpaper.widget.BottomActionBar.BottomAction.APPLY_TEXT;
 
@@ -41,8 +41,8 @@ import com.android.wallpaper.R;
 import com.android.wallpaper.picker.AppbarFragment;
 import com.android.wallpaper.widget.BottomActionBar;
 
-import com.statix.android.customization.model.font.FontOption;
-import com.statix.android.customization.model.font.FontManager;
+import com.rising.android.customization.model.font.FontOption;
+import com.rising.android.customization.model.font.FontManager;
 
 import java.util.List;
 

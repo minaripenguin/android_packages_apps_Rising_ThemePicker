@@ -4,13 +4,13 @@
 //
 
 package {
-    default_applicable_licenses: ["packages_apps_Statix_ThemePicker_license"],
+    default_applicable_licenses: ["packages_apps_Rising_ThemePicker_license"],
 }
 
 // Added automatically by a large-scale-change
 // See: http://go/android-license-faq
 license {
-    name: "packages_apps_Statix_ThemePicker_license",
+    name: "packages_apps_Rising_ThemePicker_license",
     visibility: [":__subpackages__"],
     license_kinds: [
         "SPDX-license-identifier-Apache-2.0",
@@ -21,7 +21,7 @@ license {
 }
 
 filegroup {
-    name: "StatixThemePicker_srcs",
+    name: "RisingThemePicker_srcs",
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
@@ -29,26 +29,26 @@ filegroup {
 }
 
 filegroup {
-    name: "StatixThemePicker_Manifest",
+    name: "RisingThemePicker_Manifest",
     srcs: [
         "AndroidManifest.xml",
     ],
 }
 
 genrule {
-    name: "StatixThemePicker_res",
+    name: "RisingThemePicker_res",
     tools: ["soong_zip"],
     srcs: [
         "res/**/*"
     ],
-    out: ["StatixThemePicker_res.zip"],
+    out: ["RisingThemePicker_res.zip"],
     cmd: "INPUTS=($(in)) && "
         + "RES_DIR=$$(dirname $$(dirname $${INPUTS[0]})) && "
         + "$(location soong_zip) -o $(out) -C $$RES_DIR -D $$RES_DIR"
 }
 
 genrule {
-    name: "StatixThemePicker_res_overrides",
+    name: "RisingThemePicker_res_overrides",
     tools: ["soong_zip"],
     srcs: [
         "res_override/**/*",
@@ -60,7 +60,7 @@ genrule {
 }
 
 android_library {
-    name: "StatixThemePicker-core",
+    name: "RisingThemePicker-core",
     defaults: ["ThemePicker_defaults"],
 
     optimize: {
@@ -78,16 +78,16 @@ android_library {
 // Build app code.
 //
 android_app {
-    name: "StatixThemePicker",
+    name: "RisingThemePicker",
 
     static_libs: [
-        "StatixThemePicker-core",
+        "RisingThemePicker-core",
     ],
 
     srcs: [
         ":WallpaperPicker2_srcs",
         ":ThemePicker_srcs",
-        ":StatixThemePicker_srcs",
+        ":RisingThemePicker_srcs",
         "src_override/**/*.java",
         "src_override/**/*.kt",
     ],
@@ -98,7 +98,7 @@ android_app {
 
     use_embedded_native_libs: true,
 
-    resource_zips: [":WallpaperPicker2_res", ":ThemePicker_res", ":StatixThemePicker_res", ":StatixThemePicker_res_overrides"],
+    resource_zips: [":WallpaperPicker2_res", ":ThemePicker_res", ":RisingThemePicker_res", ":RisingThemePicker_res_overrides"],
 
     optimize: {
         enabled: false,
@@ -117,7 +117,7 @@ android_app {
     required: [
         "privapp_whitelist_com.android.wallpaper",
         "default_permissions_com.android.wallpaper",
-        "StatixColorStub",
+        "RisingColorStub",
     ],
 }
 

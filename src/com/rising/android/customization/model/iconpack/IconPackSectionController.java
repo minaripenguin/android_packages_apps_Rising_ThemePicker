@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.android.customization.model.iconpack;
+package com.rising.android.customization.model.iconpack;
 
 import android.content.Context;
 import android.util.Log;
@@ -34,8 +34,8 @@ import com.android.wallpaper.R;
 import com.android.wallpaper.model.CustomizationSectionController;
 import com.android.wallpaper.util.LaunchUtils;
 
-import com.statix.android.customization.picker.iconpack.IconPackFragment;
-import com.statix.android.customization.picker.iconpack.IconPackSectionView;
+import com.rising.android.customization.picker.iconpack.IconPackFragment;
+import com.rising.android.customization.picker.iconpack.IconPackSectionView;
 
 import java.util.List;
 

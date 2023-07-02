@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.android.customization.model.font;
+package com.rising.android.customization.model.font;
 
 import android.content.Context;
 import android.util.Log;
@@ -34,8 +34,8 @@ import com.android.wallpaper.R;
 import com.android.wallpaper.model.CustomizationSectionController;
 import com.android.wallpaper.util.LaunchUtils;
 
-import com.statix.android.customization.picker.font.FontFragment;
-import com.statix.android.customization.picker.font.FontSectionView;
+import com.rising.android.customization.picker.font.FontFragment;
+import com.rising.android.customization.picker.font.FontSectionView;
 
 import java.util.List;
 

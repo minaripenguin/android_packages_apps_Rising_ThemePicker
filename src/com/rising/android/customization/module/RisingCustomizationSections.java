@@ -1,4 +1,4 @@
-package com.statix.android.customization.module;
+package com.rising.android.customization.module;
 
 import android.os.Bundle;
 
@@ -44,16 +44,16 @@ import com.android.wallpaper.picker.customization.ui.section.WallpaperQuickSwitc
 import com.android.wallpaper.picker.customization.ui.viewmodel.WallpaperQuickSwitchViewModel;
 import com.android.wallpaper.util.DisplayUtils;
 
-import com.statix.android.customization.model.font.FontManager;
-import com.statix.android.customization.model.font.FontSectionController;
-import com.statix.android.customization.model.iconpack.IconPackManager;
-import com.statix.android.customization.model.iconpack.IconPackSectionController;
+import com.rising.android.customization.model.font.FontManager;
+import com.rising.android.customization.model.font.FontSectionController;
+import com.rising.android.customization.model.iconpack.IconPackManager;
+import com.rising.android.customization.model.iconpack.IconPackSectionController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /** {@link CustomizationSections} for the customization picker. */
-public final class StatixCustomizationSections implements CustomizationSections {
+public final class RisingCustomizationSections implements CustomizationSections {
 
     private final ColorPickerViewModel.Factory mColorPickerViewModelFactory;
     private final KeyguardQuickAffordancePickerInteractor mKeyguardQuickAffordancePickerInteractor;
@@ -67,7 +67,7 @@ public final class StatixCustomizationSections implements CustomizationSections 
     private final ThemedIconSnapshotRestorer mThemedIconSnapshotRestorer;
     private final ThemedIconInteractor mThemedIconInteractor;
 
-    public StatixCustomizationSections(
+    public RisingCustomizationSections(
             ColorPickerViewModel.Factory colorPickerViewModelFactory,
             KeyguardQuickAffordancePickerInteractor keyguardQuickAffordancePickerInteractor,
             KeyguardQuickAffordancePickerViewModel.Factory
